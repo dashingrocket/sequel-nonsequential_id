@@ -1,7 +1,7 @@
-# sequel-unique_id
-[![Run Status](https://api.shippable.com/projects/5bb3aa2628d5f40700431d28/badge?branch=master)](https://app.shippable.com/github/dashingrocket/sequel-unique_id/dashboard) 
-[![Gem Version](https://badge.fury.io/rb/sequel-unique_id.svg)](http://badge.fury.io/rb/sequel-unique_id) 
-[![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/sequel-unique_id?type=total)](https://rubygems.org/gems/sequel-unique_id)
+# sequel-nonsequential_id
+[![Run Status](https://api.shippable.com/projects/5bb3aa2628d5f40700431d28/badge?branch=master)](https://app.shippable.com/github/dashingrocket/sequel-nonsequential_id/dashboard) 
+[![Gem Version](https://badge.fury.io/rb/sequel-nonsequential_id.svg)](http://badge.fury.io/rb/sequel-nonsequential_id) 
+[![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/sequel-nonsequential_id?type=total)](https://rubygems.org/gems/sequel-nonsequential_id)
 
 Automatically generate non-sequential (pseudo-random) IDs for Sequel Models
 
@@ -10,7 +10,7 @@ Automatically generate non-sequential (pseudo-random) IDs for Sequel Models
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sequel-unique_id'
+gem 'sequel-nonsequential_id'
 ```
 
 And then execute:
@@ -19,23 +19,23 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install sequel-unique_id
+    $ gem install sequel-nonsequential_id
 
 ## Usage
 
 ```ruby
-# Enable unique id for all Models
-Sequel::Model.plugin :unique_id
+# Enable nonsequential id for all Models
+Sequel::Model.plugin :nonsequential_id
 
-# Enable unique id on a specific model (defaults to the :id field)
+# Enable nonsequential id on a specific model (defaults to the :id field)
 class Artist < Sequel::Model
-  plugin :unique_id 
+  plugin :nonsequential_id 
 end
 
 
-# Enable unique id on a specific model using a custom id field
+# Enable nonsequential id on a specific model using a custom id field
 class Artist < Sequel::Model
-  plugin :unique_id, id_field: :custom_id_field
+  plugin :nonsequential_id, id_field: :custom_id_field
 end
 ```
 
@@ -49,7 +49,7 @@ Tested in a CI environment against the following Ruby versions:
 
 ## Contributing
 
-1. Fork it ( https://github.com/dashingrocket/sequel-unique_id/fork )
+1. Fork it ( https://github.com/dashingrocket/sequel-nonsequential_id/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

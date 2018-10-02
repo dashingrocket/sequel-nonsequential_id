@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = 'sequel-unique_id'
+  spec.name          = 'sequel-nonsequential_id'
   spec.version       = '0.1.0-dev'
   spec.authors       = ['Jesse Bowes']
   spec.email         = ['jbowes@dashingrocket.com']
   spec.summary       = 'Sequel Non-Sequential Unique ID Plugin'
   spec.description   = 'Automatically generate non-sequential (pseudo-random) IDs for Sequel Models'
-  spec.homepage      = 'https://github.com/dashingrocket/sequel-unique_id'
+  spec.homepage      = 'https://github.com/dashingrocket/sequel-nonsequential_id'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

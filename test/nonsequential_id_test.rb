@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'sequel'
 
-require_relative '../lib/sequel/plugins/unique_id'
+require_relative '../lib/sequel/plugins/nonsequential_id'
 
 DB = Sequel.sqlite
 
@@ -16,19 +16,19 @@ DB.create_table :test_model2s do
 end
 
 class TestModel < Sequel::Model
-  plugin :unique_id
+  plugin :nonsequential_id
 end
 
 class TestModel2 < Sequel::Model
-  plugin :unique_id, id_field: :custom_id
+  plugin :nonsequential_id, id_field: :custom_id
 end
 
-class UniqueIDTest < Test::Unit::TestCase
+class NonsequentialIdTest < Test::Unit::TestCase
   def setup
 
   end
 
-  def test_unique_id
+  def test_nonsequential_id
     obj1 = TestModel.create(name: 'obj1')
     obj2 = TestModel.create(name: 'obj2')
 
@@ -44,7 +44,7 @@ class UniqueIDTest < Test::Unit::TestCase
     assert_equal(obj2.id, TestModel.first(id: obj2.id).id)
   end
 
-  def test_test_unique_id_custom_field
+  def test_test_nonsequential_id_custom_field
     obj1 = TestModel2.create(name: 'obj1')
     obj2 = TestModel2.create(name: 'obj2')
 

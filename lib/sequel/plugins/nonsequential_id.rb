@@ -2,7 +2,7 @@ require 'securerandom'
 
 module Sequel
   module Plugins
-    module UniqueId
+    module NonsequentialId
       def self.configure(model, opts = {})
         model.instance_eval do
           @id_field = opts[:id_field] || :id
@@ -16,11 +16,11 @@ module Sequel
 
       module InstanceMethods
         def before_create
-          set_unique_id
+          set_nonsequential_id
           super
         end
 
-        private def set_unique_id
+        private def set_nonsequential_id
           method = :"#{model.id_field}="
 
           loop do
