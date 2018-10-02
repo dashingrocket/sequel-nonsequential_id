@@ -1,6 +1,6 @@
 # sequel-nonsequential_id
 [![Run Status](https://api.shippable.com/projects/5bb3aa2628d5f40700431d28/badge?branch=master)](https://app.shippable.com/github/dashingrocket/sequel-nonsequential_id/dashboard) 
-[![Gem Version](https://badge.fury.io/rb/sequel-nonsequential_id.svg)](http://badge.fury.io/rb/sequel-nonsequential_id) 
+[![Gem Version](https://badge.fury.io/rb/sequel-nonsequential_id.svg)](https://badge.fury.io/rb/sequel-nonsequential_id) 
 [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/sequel-nonsequential_id?type=total)](https://rubygems.org/gems/sequel-nonsequential_id)
 
 Automatically generate non-sequential (pseudo-random) IDs for Sequel Models
