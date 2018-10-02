@@ -24,7 +24,7 @@ module Sequel
           method = :"#{model.id_field}="
 
           loop do
-            id = SecureRandom.alphanumeric
+            id = SecureRandom.hex.hex.to_s(36)
             unless model.first("#{model.id_field}": id)
               set_column_value(method, id)
               return id
