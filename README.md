@@ -1,6 +1,5 @@
 # sequel-unique_id
-[![Run Status](https://api.shippable.com/projects/5bb3aa2628d5f40700431d28/badge?branch=master)]()
-[![Coverage Badge](https://api.shippable.com/projects/5bb3aa2628d5f40700431d28/coverageBadge?branch=master)]() 
+[![Run Status](https://api.shippable.com/projects/5bb3aa2628d5f40700431d28/badge?branch=master)]() 
 [![Gem Version](https://badge.fury.io/rb/sequel-unique_id.svg)](http://badge.fury.io/rb/sequel-unique_id) 
 [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/sequel-unique_id?type=total)](https://rubygems.org/gems/sequel-unique_id)
 
