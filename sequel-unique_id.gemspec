@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Automatically generate non-sequential (pseudo-random) IDs for Sequel Models'
   spec.homepage      = 'https://github.com/dashingrocket/sequel-unique_id'
   spec.license       = 'MIT'
+  spec.required_ruby_version = '>= 2.5.0'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
