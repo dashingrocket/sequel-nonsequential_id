@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'sequel-nonsequential_id'
-  spec.version       = '1.0.1'
+  spec.version       = '1.0.2-dev'
   spec.authors       = ['Jesse Bowes']
   spec.email         = ['jbowes@dashingrocket.com']
   spec.summary       = 'Sequel Non-Sequential Unique ID Plugin'
